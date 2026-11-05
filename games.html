@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EVOD Gaming | Games</title>
+    <link rel="stylesheet" href="css/style1.css">
+
+    <script src="js/games.js" defer></script>
+    <script src="js/theme.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>EVOD GAMING</h1>
+        <p>Connect. Compete. Conquer.</p>
+
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="games.html" aria-current="page">Games</a>
+            <a href="news.html">News</a>
+            <a href="events.html">Events</a>
+            <a href="join.html">Join Us</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <button id="themeToggle" type="button">☼</button>
+    </header>
+
+    <main>
+
+        <section class="games-intro">
+            <h2>Explore Games</h2>
+            <p>
+                Discover your next favorite PC game.
+                Explore different genres and find games that match your interests.
+            </p>
+        </section>
+
+        <section class="game-controls">
+            <h2>Find Your Game</h2>
+
+            <input type="text" id="gameSearch" placeholder="Search for a game..." aria-label="Search games">
+
+            <div class="genre-filters">
+
+                <button type="button" class="filter-btn active" data-genre="all">
+                    All
+                </button>
+
+                <button type="button" class="filter-btn" data-genre="fps">
+                    FPS
+                </button>
+
+                <button type="button" class="filter-btn" data-genre="action">
+                    Action
+                </button>
+
+                <button type="button" class="filter-btn" data-genre="sandbox">
+                    Sandbox
+                </button>
+
+                <button type="button" class="filter-btn" data-genre="rpg">
+                    RPG
+                </button>
+
+                <button type="button" class="filter-btn" data-genre="sports">
+                    Sports
+                </button>
+
+            </div>
+
+            <p id="favoritesCount" aria-live="polite">Favorites: 0</p>
+
+            <div class="sort-controls">
+                <label for="gameSort">Sort by:</label>
+
+                <select id="gameSort">
+                    <option value="default">Default</option>
+                    <option value="az">Name: A - Z</option>
+                    <option value="za">Name: Z - A</option>
+                </select>
+            </div>
+
+        </section>
+
+        <section class="game-catalog">
+
+            <h2>Explore Our Games</h2>
+
+            <div class="games-grid">
+
+                <!-- Game 1 -->
+                <div class="game-card" data-genre="fps">
+
+                    <div class="game-image">
+                        <img src="images/valorant.jpg" alt="Valorant">
+                    </div>
+
+                    <h3>Valorant</h3>
+                    <p>A tactical 5v5 competitive first-person shooter.</p>
+                    <span>FPS</span>
+
+                    <button type="button" class="favorite-btn">
+                        ♡ Add to Favorites
+                    </button>
+
+                </div>
+
+                <!-- Game 2 -->
+                <div class="game-card" data-genre="sandbox">
+
+                    <div class="game-image">
+                        <img src="images/minecraft.jpg" alt="Minecraft">
+                    </div>
+
+                    <h3>Minecraft</h3>
+                    <p>Build, explore, and create your own world.</p>
+                    <span>Sandbox</span>
+
+                    <button type="button" class="favorite-btn">
+                        ♡ Add to Favorites
+                    </button>
+
+                </div>
+
+                <!-- Game 3 -->
+                <div class="game-card" data-genre="fps">
+
+                    <div class="game-image">
+                        <img src="images/apexl.jpg" alt="Apex Legends">
+                    </div>
+
+                    <h3>Apex Legends</h3>
+                    <p>
+                        A fast-paced battle royale game where players form teams,
+                        choose unique Legends,
+                        and fight to be the last squad standing
+                    </p>
+                    <span>FPS</span>
+
+                    <button type="button" class="favorite-btn">
+                        ♡ Add to Favorites
+                    </button>
+
+                </div>
+
+                <!-- Game 4 -->
+                <div class="game-card" data-genre="action">
+
+                    <div class="game-image">
+                        <img src="images/gta.png" alt="Grand Theft Auto V">
+                    </div>
+
+                    <h3>Grand Theft Auto V</h3>
+                    <p>Explore an open world full of action and adventure.</p>
+                    <span>Action</span>
+
+                    <button type="button" class="favorite-btn">
+                        ♡ Add to Favorites
+                    </button>
+
+                </div>
+
+                <!-- Game 5 -->
+                <div class="game-card" data-genre="sports">
+
+                    <div class="game-image">
+                        <img src="images/fc26.jpg" alt="EA Sports FC 26">
+                    </div>
+
+                    <h3>EA Sports FC 26</h3>
+                    <p>Experience football with your favorite teams and players.</p>
+                    <span>Sports</span>
+
+                    <button type="button" class="favorite-btn">
+                        ♡ Add to Favorites
+                    </button>
+                </div>
+                
+                <!-- Game 6 -->
+                <div class="game-card" data-genre="sports">
+
+                    <div class="game-image">
+                        <img src="images/nba2k.jpg" alt="NBA 2k26">
+                    </div>
+
+                    <h3>NBA 2k26</h3>
+                    <p>
+                        A basketball simulation game that lets players compete in realistic matches,
+                        build teams,
+                        and experience professional basketball.
+                    </p>
+                    <span>Sports</span>
+
+                    <button type="button" class="favorite-btn">
+                        ♡ Add to Favorites
+                    </button>
+
+                </div>
+
+
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 EVOD Gaming. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

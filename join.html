@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EVOD Gaming | Join Us</title>
+
+    <link rel="stylesheet" href="css/style1.css">
+    <script src="js/join.js" defer></script>
+    <script src="js/theme.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>EVOD GAMING</h1>
+        <p>Connect. Compete. Conquer.</p>
+
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="games.html">Games</a>
+            <a href="news.html">News</a>
+            <a href="events.html">Events</a>
+            <a href="join.html" aria-current="page">Join Us</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <button id="themeToggle" type="button" aria-label="Toggle theme">☼</button>
+    </header>
+
+    <main>
+
+        <section class="intro">
+            <h2>Join the EVOD Community</h2>
+            <p>
+                Join the EVOD community and connect with
+                gamers who share your passion for gaming.
+            </p>
+        </section>
+
+        <section>
+
+            <form id="joinForm" novalidate>
+
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+
+                <br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <br><br>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" minlength="8" required>
+
+                <br><br>
+
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" minlength="8" required>
+
+                <br><br>
+
+                <label for="favoriteGame">Favorite Game:</label>
+
+                <select id="favoriteGame" name="favoriteGame" required>
+                    <option value="">Select a game</option>
+                    <option value="minecraft">Minecraft</option>
+                    <option value="valorant">Valorant</option>
+                    <option value="apex-legends">Apex Legends</option>
+                    <option value="gta">GTA V</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <br><br>
+
+                <label for="eventRegistration">Event Registration:</label>
+
+                <select id="eventRegistration" name="eventRegistration">
+                    <option value="">No event selected</option>
+                    <option value="valorant">EVOD Valorant Championship</option>
+                    <option value="minecraft">Minecraft Build Challenge</option>
+                    <option value="fc26">EVOD FC 26 Tournament</option>
+                </select>
+
+                <br><br>
+
+                <p>Gaming Interests:</p>
+
+                <input type="checkbox" id="competitive" name="interests" value="competitive">
+                <label for="competitive">Competitive Gaming</label>
+
+                <br>
+
+                <input type="checkbox" id="casual" name="interests" value="casual">
+                <label for="casual">Casual Gaming</label>
+
+                <br>
+
+                <input type="checkbox" id="streaming" name="interests" value="streaming">
+                <label for="streaming">Streaming</label>
+
+                <br>
+
+                <input type="checkbox" id="development" name="interests" value="development">
+                <label for="development">Game Development</label>
+
+                <br><br>
+
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I agree to the Terms and Conditions</label>
+
+                <br><br>
+
+                <button type="submit">Create Account</button>
+
+            </form>
+
+            <p id="formMessage"></p>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 EVOD Gaming. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

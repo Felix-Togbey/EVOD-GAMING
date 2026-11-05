@@ -1,0 +1,843 @@
+:root {
+    /* Dark theme (default) */
+    --bg-color: #080B14;
+    --header-color: #111827;
+    --card-color: #161b22;
+    --deep-surface: #080B14;
+    --text-color: #F9FAFB;
+    --body-text: #D1D5DB;
+    --secondary-text: #9ca3af;
+    --muted-text: #999999;
+    --border-color: #30363d;
+    --accent-color: #a855f7;
+    --accent-secondary: #00bfff;
+    --tag-bg: #1e1b4b;
+    --button-text: #ffffff;
+    --accent-button-text: #0d1117;
+}
+
+
+/*header content*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: var(--header-color);
+    padding: 25px 40px;
+    text-align: center;
+}
+
+header h1 {
+    color: var(--accent-color);
+    font-size: 32px;
+    margin-bottom: 8px;
+    letter-spacing: 3px;
+}
+
+header p {
+    color: var(--secondary-text);
+    margin-bottom: 25px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--accent-secondary);
+}
+
+#themeToggle{
+    margin-top: 20px;
+}
+
+/*Main content*/
+
+main {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 0 25px;
+}
+
+section {
+    background-color: var(--header-color);
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+}
+
+section h2 {
+    color: var(--accent-color);
+    margin-bottom: 15px;
+    font-size: 26px
+}
+
+section p {
+    color: var(--body-text);
+    line-height: 1.7;
+}
+
+/*Footer*/
+
+footer {
+    background-color: var(--header-color);
+    color: var(--secondary-text);
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+/*Button*/
+
+button {
+    background-color: var(--accent-color);
+    color: var(--button-text);
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--accent-secondary);
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    background-color: var(--deep-surface);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 8px;
+    accent-color: #a855f7;
+}
+
+/*Form focus effect*/
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    box-shadow: 0 0 8px rgba(168, 85, 247, 0.4)
+}
+
+.hero {
+    text-align: center;
+    padding: 80px 30px;
+    background: linear-gradient(135deg, var(--header-color), var(--tag-bg));
+    border: 1px solid var(--border-color);
+}
+
+.hero h2 {
+    font-size: 42px;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    max-width: 650px;
+    margin: 0 auto 30px;
+}
+
+.hero-btn {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: var(--button-text);
+    padding: 14px 30px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.hero-btn:hover {
+    background-color: var(--accent-secondary);
+}
+
+/*Feature section*/
+
+.features {
+    text-align: center;
+}
+
+.features h2 {
+    margin-bottom: 30px;
+}
+
+/*Feature cards container*/
+.feature-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+/*Individual feature cards*/
+.feature-card {
+    background-color: var(--deep-surface);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 25px;
+    flex: 1;
+    min-width: 220px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.feature-card h3 {
+    color: var(--accent-secondary);
+    margin-bottom: 15px;
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--accent-color);
+}
+
+/*Featured Games*/
+.feature-games {
+    text-align: center;
+}
+
+.feature-games h2 {
+    margin-bottom: 30px;
+}
+
+/*games container*/
+
+.games-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-bottom: 35px;
+}
+
+/*individual game cards*/
+
+.game-card {
+    background-color: var(--deep-surface);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 30px 20px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.game-card h3 {
+    color: var(--accent-color);
+    margin-bottom: 15px;
+}
+
+.game-card p {
+    margin-bottom: 20px;
+}
+
+.game-card span {
+    display: inline-block;
+    background-color: var(--tag-bg);
+    color: var(--accent-secondary);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+.game-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--accent-color);
+}
+
+
+/* Latest Gaming News */
+.latest-news {
+    text-align: center;
+}
+
+.latest-news h2 {
+    margin-bottom: 30px;
+}
+
+.news-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-bottom: 35px;
+}
+
+.news-card {
+    background-color: var(--deep-surface);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 30px 20px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.news-card h3 {
+    color: var(--accent-color);
+    margin-bottom: 15px;
+}
+
+.news-card p {
+    margin-bottom: 20px;
+}
+
+.news-card span {
+    display: inline-block;
+    background-color: var(--tag-bg);
+    color: var(--accent-secondary);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+.news-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--accent-color);
+}
+
+/* Upcoming Events */
+.upcoming-events {
+    text-align: center;
+}
+
+.upcoming-events h2 {
+    margin-bottom: 30px;
+}
+
+.events-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-bottom: 35px;
+}
+
+.event-card {
+    background-color: var(--deep-surface);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 30px 20px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.event-card h3 {
+    color: var(--accent-color);
+    margin-bottom: 15px;
+}
+
+.event-card p {
+    margin-bottom: 20px;
+}
+
+.event-card span {
+    color: var(--accent-secondary);
+    font-weight: bold;
+}
+
+.event-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--accent-color);
+}
+
+
+
+/* Join Community CTA */
+.join-cta {
+    text-align: center;
+    padding: 60px 30px;
+    background: linear-gradient(135deg, var(--tag-bg), var(--header-color));
+    border: 1px solid var(--accent-color);
+}
+
+.join-cta h2 {
+    color: var(--text-color);
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.join-cta p {
+    max-width: 650px;
+    margin: 0 auto 30px;
+    font-size: 17px;
+}
+
+/* Games Page Introduction */
+.games-intro {
+    text-align: center;
+    padding: 50px 30px;
+}
+
+.games-intro h2 {
+    font-size: 36px;
+    color: var(--accent-color);
+    margin-bottom: 15px;
+}
+
+/* Game Controls */
+.game-controls {
+    text-align: center;
+}
+
+.game-controls h2 {
+    margin-bottom: 25px;
+}
+
+#gameSearch {
+    max-width: 600px;
+    margin: 0 auto 25px;
+    display: block;
+}
+
+/* Genre Filters */
+.genre-filters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.filter-btn {
+    background-color: var(--tag-bg);
+    border: 1px solid var(--border-color);
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background-color: var(--accent-color);
+}
+
+/* Sorting */
+.sort-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+#gameSort {
+    width: auto;
+    min-width: 160px;
+}
+
+/*game images*/
+
+.game-image {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.game-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Game Catalog */
+.game-catalog {
+    text-align: center;
+}
+
+.game-catalog h2 {
+    margin-bottom: 30px;
+}
+
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+/* Individual Game Cards */
+.game-card {
+    background-color: var(--deep-surface);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.game-card h3 {
+    color: var(--accent-color);
+    margin-bottom: 12px;
+}
+
+.game-card p {
+    color: var(--body-text);
+    margin-bottom: 15px;
+}
+
+.game-card span {
+    display: inline-block;
+    background-color: var(--tag-bg);
+    color: var(--accent-secondary);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.game-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--accent-color);
+}
+
+/* Favorite Button */
+.favorite-btn {
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.favorite-btn.favorited{
+    background-color: #e63946;
+    color: var(--text-color);
+    border-color: #e63946;
+}
+
+.intro {
+    text-align: center;
+    padding: 50px 30px;
+}
+
+.intro h2 {
+    font-size: 36px;
+    color: var(--accent-color);
+    margin-bottom: 15px;
+}
+
+
+/* NEWS PAGE*/
+
+.featured-news {
+    margin: 40px auto;
+    padding: 25px;
+    max-width: 1100px;
+    background-color: var(--card-color);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+}
+
+.featured-image {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.news-category {
+    display: inline-block;
+    color: var(--accent-secondary);
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.news-card{
+    margin-bottom:10px;
+}
+
+.featured-news time,
+.news-card time {
+    display: block;
+    color: var(--muted-text);
+    font-size: 13px;
+    margin-bottom: 12px;
+}
+
+.featured-news h3 {
+    color: var(--text-color);
+    font-size: 26px;
+    margin-bottom: 12px;
+}
+
+.featured-news p {
+    color: var(--body-text);
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.featured-news a {
+    display: inline-block;
+    color: var(--accent-secondary);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.featured-news a:hover {
+    color: var(--text-color);
+}
+
+.news-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    
+}
+
+/* News category filters */
+
+.news-filters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 30px auto;
+}
+
+.news-filter {
+    padding: 10px 18px;
+    background-color: var(--card-color);
+    color: var(--body-text);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.news-filter:hover,
+.news-filter.active {
+    background-color: var(--accent-secondary);
+    color: var(--accent-button-text);
+    border-color: var(--accent-secondary);
+}
+
+
+/* News search bar */
+
+.news-search {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 10px 10px;
+
+}
+
+.news-search input {
+    width: 100%;
+    padding: 14px 18px;
+    background-color: var(--card-color);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.news-search input:focus {
+    border-color: var(--accent-secondary);
+}
+
+.news-search input::placeholder {
+    color: var(--muted-text);
+}
+
+.events-section {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.events-section h2 {
+    color: var(--text-color);
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.event-card {
+    background-color: var(--card-color);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.event-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--accent-secondary);
+}
+
+.event-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.event-content {
+    padding: 20px;
+}
+
+.event-category {
+    display: inline-block;
+    color: var(--accent-secondary);
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.event-content h3 {
+    color: var(--text-color);
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.event-content > p {
+    color: var(--body-text);
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.event-details {
+    border-top: 1px solid var(--border-color);
+    padding-top: 15px;
+    margin-bottom: 20px;
+}
+
+.event-details p {
+    color: var(--body-text);
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.event-details strong {
+    color: var(--text-color);
+}
+
+.event-btn {
+    display: inline-block;
+    padding: 11px 18px;
+    background-color: var(--accent-secondary);
+    color: var(--accent-button-text);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.event-btn:hover {
+    background-color: var(--header-color);
+}
+
+
+/* Light Mode */
+body.light-mode {
+    --bg-color: #f5f7fa;
+    --header-color: #ffffff;
+    --card-color: #ffffff;
+    --deep-surface: #ffffff;
+    --text-color: #1f2937;
+    --body-text: #475569;
+    --secondary-text: #64748b;
+    --muted-text: #64748b;
+    --border-color: #d1d5db;
+    --accent-color: #7c3aed;
+    --accent-secondary: #0891b2;
+    --tag-bg: #ede9fe;
+    --button-text: #ffffff;
+    --accent-button-text: #0f172a;
+}
+
+@media(max-width: 768px) {
+    .games-container {
+        grid-template-columns: 1fr;
+    }
+
+    .events-container {
+        grid-template-columns: 1fr;
+    }
+
+    .news-container {
+        grid-template-columns: 1fr;
+    }
+
+    .games-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .game-image {
+        height: 160px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .games-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .game-image {
+        height: 180px;
+    }
+
+    .games-intro h2 {
+        font-size: 28px;
+    }
+
+    .sort-controls {
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 900px) {
+    .events-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .events-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .events-section h2 {
+        font-size: 24px;
+    }
+}

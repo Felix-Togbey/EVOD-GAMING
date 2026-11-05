@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EVOD Gaming | News</title>
+    <link rel="stylesheet" href="css/style1.css">
+
+    <script src="js/news.js" defer></script>
+    <script src="js/theme.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>EVOD GAMING</h1>
+        <p>Connect. Compete. Conquer.</p>
+
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="games.html">Games</a>
+            <a href="news.html" aria-current="page">News</a>
+            <a href="events.html">Events</a>
+            <a href="join.html">Join Us</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <button id="themeToggle" type="button">☼</button>
+    </header>
+
+    <main>
+
+        <section class="intro">
+            <h2>Latest Gaming News</h2>
+            <p>
+                Discover the latest information, updates,
+                and announcements from the gaming world.
+            </p>
+        </section>
+
+        <section class="featured-news" data-category="community">
+
+            <img class="featured-image" src="images/esport.jpg" alt="Esports tournament">
+
+            <span>Community News</span>
+
+            <time datetime="2026-11-05">November 5, 2026</time>
+
+            <h3>EVOD Gaming Announces Its First Major Community Tournament</h3>
+
+            <p>
+                EVOD Gaming is preparing its first major online tournament,
+                bringing players together to compete, build teams,
+                and prove their skills.
+            </p>
+
+            <a href="#">Read More</a>
+
+        </section>
+
+        <section class="news-filters">
+
+            <button type="button" class="news-filter active" data-category="all">
+                All
+            </button>
+
+            <button type="button" class="news-filter" data-category="community">
+                Community News
+            </button>
+
+            <button type="button" class="news-filter" data-category="updates">
+                Game Updates
+            </button>
+
+            <button type="button" class="news-filter" data-category="esports">
+                Esports
+            </button>
+
+            <button type="button" class="news-filter" data-category="gaming">
+                Gaming News
+            </button>
+
+        </section>
+
+        <section class="news-search">
+
+            <input type="text" id="newsSearch" placeholder="Search gaming news..." aria-label="Search gaming news">
+
+        </section>
+
+        <!-- More News -->
+        <section class="news-grid">
+
+            <h2>More Gaming News</h2>
+
+            <article class="news-card" data-category="updates">
+
+                <img class="news-image" src="images/fps.jpg" alt="First-person shooter gameplay">
+
+                <span class="news-category">Game Updates</span>
+
+                <time datetime="2026-11-03">November 3, 2026</time>
+
+                <h3>New FPS Update Introduces Competitive Game Mode</h3>
+
+                <p>
+                    A new competitive mode introduces fresh maps, improved matchmaking,
+                    and exciting challenges for FPS fans.
+                </p>
+
+                <a href="#">Read More</a>
+
+            </article>
+
+            <article class="news-card" data-category="esports">
+
+                <img class="news-image" src="images/celeb.jpg" alt="Esports team celebrating a victory">
+
+                <span class="news-category">Esports</span>
+
+                <time datetime="2026-10-09">October 9, 2026</time>
+
+                <h3>Team Solarius Wins the International Gaming Cup</h3>
+
+                <p>
+                    Team Solarius surprises fans after defeating several top-ranked
+                    teams in an intense international competition.
+                </p>
+
+                <a href="#">Read More</a>
+
+            </article>
+
+            <article class="news-card" data-category="gaming">
+
+                <img class="news-image" src="images/new-dimension.jpeg" alt="New game dimension">
+
+                <span class="news-category">Game News</span>
+
+                <time datetime="2026-10-25">October 25, 2026</time>
+
+                <h3>Popular Sandbox Game Reveals Its Biggest Expansion Yet</h3>
+
+                <p>
+                    Players can explore new environments,
+                    discover hidden locations, and unlock
+                    new crafting possibilities in the upcoming
+                    expansion.
+                </p>
+
+                <a href="#">Read More</a>
+
+            </article>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 EVOD Gaming. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
